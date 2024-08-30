@@ -1,4 +1,4 @@
 .Page {
   overflow-y: auto;
-  height: 100%;
+  height: calc(100vh - var(--navbar-height));
 }
