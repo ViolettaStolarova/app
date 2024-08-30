@@ -1,0 +1,13 @@
+.Navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  padding: 5px 20px 5px 110px;
+  background: var(--inverted-bg-color);
+  border-radius: 0 0 0 20px;
+}
+
+.controlsContainer {
+  margin-left: auto;
+}
