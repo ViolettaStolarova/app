@@ -1,0 +1,76 @@
+.Card {
+  cursor: pointer;
+}
+
+.border_0 {
+  border-radius: 0;
+}
+
+.border_10 {
+  border-radius: 10px;
+}
+
+.border_15 {
+  border-radius: 15px;
+}
+
+.border_20 {
+  border-radius: 20px;
+}
+
+.border_25 {
+  border-radius: 25px;
+}
+
+.clear {
+  background: none;
+}
+
+.filled {
+  color: var(--inverted-primary-color);
+  background: var(--inverted-bg-color);
+
+  &:hover {
+    color: var(--inverted-primary-color-hover);
+    background: var(--inverted-bg-color-hover);
+  }
+}
+
+.outline {
+  background: none;
+  color: var(--primary-color);
+  border: 2px solid var(--inverted-bg-color);
+
+  &:hover {
+    border: 2px solid var(--inverted-bg-color-hover);
+    color: var(--primary-color-hover);
+  }
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.gap_0 {
+  padding: 0;
+}
+
+.gap_8 {
+  padding: 8px;
+}
+
+.gap_16 {
+  padding: 16px;
+}
+
+.gap_24 {
+  padding: 24px;
+}
+
+.gap_32 {
+  padding: 32px;
+}

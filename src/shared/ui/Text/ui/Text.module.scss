@@ -1,0 +1,67 @@
+.title,
+.text {
+  color: var(--primary-color);
+}
+
+.size_s {
+  .title {
+    font: var(--font-m);
+  }
+
+  .text {
+    font: var(--font-s);
+  }
+}
+
+.size_m {
+  .title {
+    font: var(--font-l);
+  }
+
+  .text {
+    font: var(--font-m);
+  }
+}
+
+.size_l {
+  .title {
+    font: var(--font-xl);
+  }
+
+  .text {
+    font: var(--font-l);
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  .title,
+  .text {
+    font-weight: 600;
+  }
+}
+
+.error {
+  .title,
+  .text {
+    color: var(--error-color);
+  }
+}
+
+.accent {
+  .title,
+  .text {
+    text-shadow: -1px 1px 2px var(--text-shadow);
+  }
+}
