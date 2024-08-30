@@ -1,5 +1,7 @@
+import { Page } from 'widgets/Page';
+
 const LoginPage = () => {
-  return <div>LOGIN PAGE</div>;
+  return <Page>LOGIN PAGE</Page>;
 };
 
 export default LoginPage;

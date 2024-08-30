@@ -1,3 +1,5 @@
+import { Page } from 'widgets/Page';
+
 export const NotFoundPage = () => {
-  return <div>NOT FOUND</div>;
+  return <Page>NOT FOUND</Page>;
 };

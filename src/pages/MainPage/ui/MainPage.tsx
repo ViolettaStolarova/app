@@ -1,5 +1,7 @@
+import { Page } from 'widgets/Page';
+
 const MainPage = () => {
-  return <div>MAIN PAGE</div>;
+  return <Page>MAIN PAGE</Page>;
 };
 
 export default MainPage;
