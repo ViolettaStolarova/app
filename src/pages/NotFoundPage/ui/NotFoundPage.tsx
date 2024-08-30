@@ -1,5 +1,17 @@
-import { Page } from 'widgets/Page';
+import { classNames } from 'shared/lib/classNames/classNames';
 
-export const NotFoundPage = () => {
-  return <Page>NOT FOUND</Page>;
+import { Page } from 'widgets/Page';
+import { Text } from 'shared/ui/Text';
+
+import cls from './NotFoundPage.module.scss';
+
+interface NotFoundPageProps {
+  className?: string;
+}
+export const NotFoundPage = ({ className }: NotFoundPageProps) => {
+  return (
+    <Page className={classNames(cls.NotFoundPage, {}, [className])}>
+      <Text bold title=" PAGE NOT FOUND :(" />
+    </Page>
+  );
 };
