@@ -1,5 +1,9 @@
 import { RouteProps } from 'react-router-dom';
-import { AppRoutes, getRouteLogin, getRouteMain } from 'shared/const/router';
+import {
+  AppRoutes,
+  getRouteLogin,
+  getRouteMain,
+} from 'shared/constants/router';
 
 import { LoginPage } from 'pages/LoginPage';
 import { MainPage } from 'pages/MainPage';
