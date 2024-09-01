@@ -3,7 +3,6 @@ import { useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { useTheme } from 'shared/lib/hooks/useTheme/useTheme';
 
 import { AppRouter } from './providers/router';
 import { Navbar } from 'widgets/Navbar';
@@ -13,7 +12,6 @@ import { getRouteLogin } from 'shared/constants/router';
 import './styles/index.scss';
 
 function App() {
-  const { theme } = useTheme();
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
@@ -32,7 +30,7 @@ function App() {
   }, [dispatch, navigate, userAuthData]);
 
   return (
-    <div className={classNames('app', {}, [theme])}>
+    <div className={classNames('app', {}, [])}>
       <Navbar
         userAuthData={userAuthData}
         onLoginButtonClick={onLoginButtonClick}
