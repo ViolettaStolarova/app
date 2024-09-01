@@ -2,17 +2,10 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { userActions } from '../slice/userSlice';
 import { STORAGE_KEYS, StorageService } from 'shared/lib/services/storeService';
 
-export const logoutUser = createAsyncThunk(
-  'user/logoutUser',
-  async (_, thunkAPI) => {
-    const { dispatch, rejectWithValue } = thunkAPI;
+export const logoutUser = createAsyncThunk('user/logoutUser', (_, thunkAPI) => {
+  const { dispatch } = thunkAPI;
 
-    try {
-      StorageService.deleteItem(STORAGE_KEYS.USER_ID_KEY);
+  StorageService.deleteItem(STORAGE_KEYS.USER_ID_KEY);
 
-      dispatch(userActions.logout());
-    } catch (e) {
-      return rejectWithValue('');
-    }
-  }
-);
+  dispatch(userActions.logout());
+});
