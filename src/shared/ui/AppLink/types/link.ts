@@ -1,1 +1,1 @@
-export type AppLinkVariant = 'primary' | 'secondary';
+export type AppLinkVariant = 'primary' | 'primaryInverted';

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px 15px;
+  padding: 5px 12px;
   color: var(--primary-color);
   outline: none;
   cursor: pointer;
@@ -19,14 +19,25 @@
   outline: none;
 }
 
-.filled {
+.primary {
+  color: var(--primary-color);
+  background: var(--bg-color);
+  border: none;
+
+  &:hover {
+    color: var(--primary-color-darkened);
+    background: var(--bg-color-darkened);
+  }
+}
+
+.primaryInverted {
   color: var(--inverted-primary-color);
   background: var(--inverted-bg-color);
   border: none;
 
   &:hover {
-    color: var(--inverted-primary-color-hover);
-    background: var(--inverted-bg-color-hover);
+    color: var(--inverted-primary-color-darkened);
+    background: var(--inverted-bg-color-darkened);
   }
 }
 
@@ -36,8 +47,8 @@
   border: 2px solid var(--inverted-bg-color);
 
   &:hover {
-    border: 2px solid var(--inverted-bg-color-hover);
-    color: var(--primary-color-hover);
+    border: 2px solid var(--inverted-bg-color-darkened);
+    color: var(--primary-color-darkened);
   }
 }
 
@@ -71,6 +82,7 @@
 
 .disabled {
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .fullWidth {

@@ -6,14 +6,14 @@
   color: var(--primary-color);
 
   &:hover {
-    color: var(--primary-color-hover);
+    color: var(--primary-color-darkened);
   }
 }
 
-.secondary {
-  color: var(--secondary-color);
+.primaryInverted {
+  color: var(--inverted-primary-color);
 
   &:hover {
-    color: var(--secondary-color-hover);
+    color: var(--inverted-primary-color-darkened);
   }
 }

@@ -28,7 +28,7 @@ export const Button = forwardRef(
   (props: ButtonProps, ref: ForwardedRef<HTMLButtonElement>) => {
     const {
       className,
-      variant = 'filled',
+      variant = 'primary',
       size = 'm',
       borderRadius = '10',
       disabled,
