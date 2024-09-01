@@ -6,7 +6,7 @@ import { Text } from 'shared/ui/Text';
 import { AppLink } from 'shared/ui/AppLink';
 import { HStack } from 'shared/ui/Stack';
 import { User } from 'entities/User';
-import { ThemeSwitcher } from 'features/ThemeSwitcher';
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
 
 import cls from './Navbar.module.scss';
 
