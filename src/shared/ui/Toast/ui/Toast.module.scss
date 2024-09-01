@@ -1,0 +1,18 @@
+.Toast {
+  width: 300px;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 7px;
+}
+
+.success {
+  background: var(--success-color);
+}
+
+.danger {
+  background: var(--danger-color);
+}
+
+.warning {
+  background: var(--warning-color);
+}
