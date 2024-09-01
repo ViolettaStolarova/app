@@ -1,13 +1,22 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { StateSchema } from './StateSchema';
+import { rtkApi } from 'shared/api/rtkApi';
 
-export function createReduxStore(initialState?: StateSchema) {
-  const rootReducers: ReducersMapObject<StateSchema> = {};
+import { userReducer } from 'entities/User';
 
-  return configureStore<StateSchema>({
+function createReduxStore() {
+  const rootReducers: ReducersMapObject<StateSchema> = {
+    user: userReducer,
+    [rtkApi.reducerPath]: rtkApi.reducer,
+  };
+
+  return configureStore({
     reducer: rootReducers,
-    preloadedState: initialState,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware().concat(rtkApi.middleware),
   });
 }
+
+export const store = createReduxStore();
 
 export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch'];
