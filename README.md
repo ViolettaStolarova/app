@@ -12,7 +12,7 @@ App implemented using [feature sliced design](https://feature-sliced.design/) me
 3. Clone your newly created repo: `https://github.com/<%your_github_username%>/app/`
 4. Go to folder `app`
 5. To install all dependencies use `npm install`
-6. To run the app use `npm run dev` (more info about such scripts you can find below👇)
+6. To run the app use `npm run dev`
 
 ## Available Scripts
 
