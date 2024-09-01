@@ -30,8 +30,8 @@ export const PostItem = memo((props: Props) => {
         max
       />
       <VStack max gap={8}>
-        <Text className={cls.name} title={item.title} size="m" bold />
-        <Text className={cls.name} text={item.body} />
+        <Text title={item.title} size="m" bold />
+        <Text text={item.body} />
       </VStack>
     </Card>
   );
