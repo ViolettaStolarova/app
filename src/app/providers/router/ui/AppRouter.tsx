@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { routeConfig } from '../config/routeConfig';
 
-const AppRouter = () => (
+export const AppRouter = () => (
   <Suspense fallback="">
     <Routes>
       {Object.values(routeConfig).map(({ element, path }) => (
@@ -16,5 +16,3 @@ const AppRouter = () => (
     </Routes>
   </Suspense>
 );
-
-export default AppRouter;
