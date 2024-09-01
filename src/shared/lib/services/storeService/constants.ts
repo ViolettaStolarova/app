@@ -1,0 +1,14 @@
+export enum STORAGE_KEYS {
+  LOCAL_STORAGE_THEME_KEY = 'theme',
+  LOCAL_STORAGE_USER_ID_KEY = 'userId',
+}
+
+export enum VALUE_TYPE {
+  PRIMITIVE = 'primitive',
+  OBJECT = 'object',
+}
+
+export const mapStoreKeysToValueType: Record<STORAGE_KEYS, VALUE_TYPE> = {
+  [STORAGE_KEYS.LOCAL_STORAGE_THEME_KEY]: VALUE_TYPE.PRIMITIVE,
+  [STORAGE_KEYS.LOCAL_STORAGE_USER_ID_KEY]: VALUE_TYPE.PRIMITIVE,
+};
