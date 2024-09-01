@@ -1,0 +1,19 @@
+.AppLink {
+  transition: color 0.4s;
+}
+
+.primary {
+  color: var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color-darkened);
+  }
+}
+
+.primaryInverted {
+  color: var(--inverted-primary-color);
+
+  &:hover {
+    color: var(--inverted-primary-color-darkened);
+  }
+}
