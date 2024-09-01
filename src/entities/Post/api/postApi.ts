@@ -1,7 +1,7 @@
 import { rtkApi } from 'shared/api/rtkApi';
 import { Post } from 'entities/Post';
 
-const recommendationsApi = rtkApi.injectEndpoints({
+const postApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({
     getPosts: build.query<Post[], void>({
       query: () => ({
@@ -11,5 +11,5 @@ const recommendationsApi = rtkApi.injectEndpoints({
   }),
 });
 
-export const useGetPosts = recommendationsApi.useGetPostsQuery;
-export const getPosts = recommendationsApi.endpoints.getPosts.initiate;
+export const useGetPosts = postApi.useGetPostsQuery;
+export const getPosts = postApi.endpoints.getPosts.initiate;
