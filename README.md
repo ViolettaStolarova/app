@@ -3,6 +3,9 @@
 ## Deploy
 [App](https://best-application.netlify.app/)
 
+## Architecture
+App implemented using [feature sliced design](https://feature-sliced.design/) methodology.
+
 ## Setup instruction
 1. Install Node.js
 2. Fork this repository: [https://github.com/ViolettaStolarova/app](https://github.com/ViolettaStolarova/app)
