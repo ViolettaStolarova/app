@@ -1,0 +1,11 @@
+.PostItem {
+  max-width: 300px;
+  min-height: 400px;
+  gap: 20px;
+
+  .placeholderContainer {
+    height: 150px;
+    background: var(--post-placeholder-color);
+    border-radius: 10px;
+  }
+}
