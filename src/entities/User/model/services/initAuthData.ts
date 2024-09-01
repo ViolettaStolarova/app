@@ -9,9 +9,7 @@ export const initAuthData = createAsyncThunk(
     const { dispatch, rejectWithValue } = thunkAPI;
 
     try {
-      const userId = StorageService.getItem(
-        STORAGE_KEYS.LOCAL_STORAGE_USER_ID_KEY
-      );
+      const userId = StorageService.getItem(STORAGE_KEYS.USER_ID_KEY);
 
       if (!userId) {
         return;

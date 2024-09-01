@@ -16,7 +16,7 @@ export function useTheme(): UseThemeResult {
 
     setTheme?.(newTheme);
 
-    StorageService.setItem(STORAGE_KEYS.LOCAL_STORAGE_THEME_KEY, newTheme);
+    StorageService.setItem(STORAGE_KEYS.THEME_KEY, newTheme);
   };
 
   return { theme: theme || Theme.LIGHT, toggleTheme };

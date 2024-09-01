@@ -15,7 +15,7 @@ export const loginByUsername = createAsyncThunk(
         return rejectWithValue('The user was not found.');
       }
 
-      StorageService.setItem(STORAGE_KEYS.LOCAL_STORAGE_USER_ID_KEY, user.id);
+      StorageService.setItem(STORAGE_KEYS.USER_ID_KEY, user.id);
 
       dispatch(userActions.setAuthData(user));
 

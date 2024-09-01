@@ -9,8 +9,7 @@ interface ThemeProviderProps {
 }
 
 const defaultTheme =
-  (StorageService.getItem(STORAGE_KEYS.LOCAL_STORAGE_THEME_KEY) as Theme) ||
-  Theme.LIGHT;
+  (StorageService.getItem(STORAGE_KEYS.THEME_KEY) as Theme) || Theme.LIGHT;
 
 const ThemeProvider: FC<ThemeProviderProps> = (props) => {
   const { children, initialTheme } = props;

@@ -8,7 +8,7 @@ export const logoutUser = createAsyncThunk(
     const { dispatch, rejectWithValue } = thunkAPI;
 
     try {
-      StorageService.deleteItem(STORAGE_KEYS.LOCAL_STORAGE_USER_ID_KEY);
+      StorageService.deleteItem(STORAGE_KEYS.USER_ID_KEY);
 
       dispatch(userActions.logout());
     } catch (e) {
