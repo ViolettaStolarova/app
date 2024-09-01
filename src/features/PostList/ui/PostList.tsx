@@ -35,13 +35,17 @@ export const PostList = memo((props: Props) => {
     );
   }
 
+  if (!posts || !posts.length) {
+    return (
+      <HStack className={rootContainer}>
+        <Text size="m" title="No posts available" />
+      </HStack>
+    );
+  }
+
   return (
     <HStack className={rootContainer} justify="center" wrap="wrap" gap={32}>
-      {posts && posts?.length > 0 ? (
-        posts.map((item) => <PostItem key={item.id} item={item} />)
-      ) : (
-        <Text size="m" title="No posts available" />
-      )}
+      {posts?.map((item) => <PostItem key={item.id} item={item} />)}
     </HStack>
   );
 });
