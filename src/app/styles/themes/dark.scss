@@ -1,15 +1,21 @@
-body.dark {
+.app.dark {
   --bg-color: #58585a;
+  --bg-color-darkened: #49494a;
   --inverted-bg-color: #e0dcd7;
+  --inverted-bg-color-darkened: #c1bebb;
 
-  --primary-color: #f7f7f7;
-  --primary-color-accent: #dddbdb;
-  --inverted-primary-color: #1b1b1b;
-  --inverted-primary-color-accent: #555252;
+  --primary-color: #ece6e6;
+  --primary-color-darkened: #dddbdb;
+  --inverted-primary-color: #474444;
+  --inverted-primary-color-darkened: #555252;
 
-  --secondary-color: #21c531;
-  --inverted-secondary-color: #89bf0b;
-
-  --accent-color: #56cc62;
+  --accent-color: #4f62b7f8;
   --hint-color: #b8b8c5;
+
+  --card-bg: #49494a;
+  --card-shadow: #223c5033;
+
+  --post-placeholder-color: #979696;
+
+  --text-shadow: #82828af5;
 }
